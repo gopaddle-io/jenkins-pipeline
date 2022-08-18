@@ -5,7 +5,7 @@ Sample pipeline code for CI/CD pipelines in gopaddle using Jenkins
 
 As a pre-requisite, an application must be deployed in gopaddle. Below flow chart gives the step by step process to be followed before creating a Jenkins pipeline.
 
-![](/assets/images/jenkinspipeline.png)
+![](/assets/images/jenkinspipe.png)
 
 Since we are building a pipeline for an application deployed in gopaddle, we must first initialize and deploy an application in gopaddle before we move on to creating the pipeline in Jenkins.
 
