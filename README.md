@@ -56,6 +56,21 @@ In the Groovy script first we check the status of the build. if the status is **
 }
 ```
 
+It will update the build image version in the application in the gopaddle. but before trigger the build in the gopaddle, create the webhook notification using the webhook URL.
+
+Go to gopaddle portal. 
+
+Click on the Notification.
+
+Go to “HTTP Webhooks” tab.
+
+Choose Type as Jenkins and use the below URL to register jenkins webhook notification.
+
+```
+http://<Jenkins_Domain>/generic-webhook-trigger/invoke?token=build-complete
+```
+Go to the alert page create New alert. select the container with **BuildCreate** option. now you can trigger the build to run the pipeline.
+
 
 
 
