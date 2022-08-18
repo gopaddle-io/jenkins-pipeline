@@ -16,4 +16,4 @@ status --> $.message.description.status
 buildVersion --> $.message.description.buildVersion
 ```
 
-![](/assets/images/pipeline-create.jpeg)
+![](/assets/images/buildtriggers-1~2.png)
