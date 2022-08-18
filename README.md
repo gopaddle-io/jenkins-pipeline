@@ -17,3 +17,7 @@ buildVersion --> $.message.description.buildVersion
 ```
 
 ![](/assets/images/buildtriggers-1~2.png)
+
+- Add a token for authenticate the webhook in the token part.
+
+
