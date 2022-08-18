@@ -22,6 +22,40 @@ buildVersion --> $.message.description.buildVersion
 
 ![](/assets/images/buildtriggers-token-1~2.png)
 
+In the Groovy script first we check the status of the build. if the status is **created** then we have to rolling update the application in the gopaddle using API Token.
+
+ **API**:  https://$endPoint/gateway/v1/$(projectID)/application/$(applicationID)
+  
+  **Method**: PUT
+  
+  **Payload**: 
+  
+  ```json
+{
+   "deploymentTemplateVersion": "draft",
+	"serviceGroups": [
+		{
+			"name": "petclinic",
+			"description": "V2VsY29tZSBtZXNzYWdlIHVwZGF0ZWQ=",
+			"id": "serviceGroupID",
+			"version": "draft",
+			"services": [
+				{
+					"releaseConfig": {
+						"buildID": "'"$buildID"'",
+						"version": "'"$buildVersion"'"
+						
+					},
+					"id": "'"$serviceID"'",
+					"serviceVersion": "draft"
+				}
+			]
+		}
+	],
+	"updateType": "buildUpdate"
+}
+```
+
 
 
 
