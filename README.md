@@ -89,6 +89,10 @@ http://<Jenkins_Domain>/generic-webhook-trigger/invoke?token=build-complete
 Go to the alert page create New alert. select the container with **BuildCreate** option. now you can trigger the build to run the pipeline.
 
 
+## Maintainers
+This sample template is maintained by the <img src="https://i0.wp.com/blog.gopaddle.io/wp-content/uploads/2020/08/cropped-gopaddle.png?fit=512%2C512&ssl=1" width="17" height="17"> [gopaddle.io](https://gopaddle.io) team.
+
+
 
 
 
